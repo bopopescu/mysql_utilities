@@ -76,10 +76,10 @@ PARSE_ERR_OPTS_REQ = "Option '{opt}' is required."
 PARSE_ERR_OPTS_REQ_BY_CMD = ("'{cmd}' requires the following option(s): "
                              "{opts}.")
 
-PARSE_ERR_SLAVE_DISCO_REQ = ("Option --discover-slaves-login or --slaves is "
+PARSE_ERR_SLAVE_DISCO_REQ = ("Option --discover-subordinates-login or --subordinates is "
                              "required.")
 
-PARSE_ERR_SLAVE_DISCO_EXC = ("Options --discover-slaves-login and --slaves "
+PARSE_ERR_SLAVE_DISCO_EXC = ("Options --discover-subordinates-login and --subordinates "
                              "cannot be used simultaneously.")
 
 WARN_OPT_NOT_REQUIRED = ("WARNING: The {opt} option is not required for "
@@ -94,17 +94,17 @@ WARN_OPT_ONLY_USED_WITH = ("# WARNING: The {opt} option is only used with "
 WARN_OPT_USING_DEFAULT = ("WARNING: Using default value '{default}' for "
                           "option {opt}.")
 
-ERROR_SAME_MASTER = ("The specified new master {n_master_host}:{n_master_port}"
+ERROR_SAME_MASTER = ("The specified new main {n_main_host}:{n_main_port}"
                      " is the same as the "
-                     "actual master {master_host}:{master_port}.")
+                     "actual main {main_host}:{main_port}.")
 
-SLAVES = "slaves"
+SLAVES = "subordinates"
 
 CANDIDATES = "candidates"
 
-ERROR_MASTER_IN_SLAVES = ("The master {master_host}:{master_port} "
-                          "and one of the specified {slaves_candidates} "
-                          "are the same {slave_host}:{slave_port}.")
+ERROR_MASTER_IN_SLAVES = ("The main {main_host}:{main_port} "
+                          "and one of the specified {subordinates_candidates} "
+                          "are the same {subordinate_host}:{subordinate_port}.")
 
 SCRIPT_THRESHOLD_WARNING = ("WARNING: You have chosen to use external script "
                             "return code checking. Depending on which script "
